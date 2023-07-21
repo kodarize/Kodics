@@ -1,6 +1,7 @@
 document.getElementById('Frame').addEventListener( "load", function(e) {
-    if(this.contentDocument.referrer.includes("www.youtube.com") && !this.contentDocument.referrer.includes(".com/embed")){
-        var videoId = getId(this.contentDocument.referrer);
+    var ref1 = this.contentDocument.referrer;
+    if((ref1.indexOf("www.youtube.com") > -1) && !(ref1.indexOf(".com/embed") > -1)){
+        var videoId = getId(ref1);
         this.src = "https://www.youtube.com/embed/" + videoId;
     };
 } );

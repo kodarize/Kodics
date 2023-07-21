@@ -32,7 +32,7 @@ body {
     height: 100%;
     opacity: 0;
     animation: welcomeAnimation ease 5s;
-    animation-delay: 0s;
+    animation-delay: 20s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     font-family: 'Relish Gargler', sans-serif;
