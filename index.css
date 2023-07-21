@@ -26,6 +26,7 @@ body {
 
 #Kodics {
     position: absolute;
+    cursor: none;
     top: 0;
     left: 0;
     width: 100%;
@@ -93,8 +94,10 @@ body {
 @keyframes welcomeAnimation {
     0% {
         opacity: 0;
+        cursor: none;
     }
     100% {
         opacity: 1;
+        cursor: auto;
     }
 }
